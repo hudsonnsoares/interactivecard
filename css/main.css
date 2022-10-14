@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+body, html{
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size:18px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  height: 100vh;
+  width: 100%;
+}
+.clear{
+  clear: both;
+}
+lmobile{
+  display: none;
+}
+@media only screen and (max-width: 375px){
+  lmobile{
+    display: block;
+    width: 375px;
+    margin:0 auto;
+    height: 100%;
+  }
+  #LinhaUm{
+    background: url('../images/bg-main-mobile.png') no-repeat;
+    width: 375px;
+    height: 400px;
+  }
+}
+.cartoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#FFF;
+}
+dados{
+  display: block;
+}
+#verso{
+  background-image: url('/images/bg-card-back.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top:30px;
+  right: -10px;
+  width:75%;
+  height: 240px ;
+  z-index: 1;
+  padding: 20px;
+}
+#verso dados{
+  text-align: right;
+  margin: 55px 20px 0 0;
+}
+#frente{
+  background-image: url('/images/bg-card-front.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width:75%;
+  height: 240px ;
+  top:20%;
+  left:5%;
+  z-index: 2;
+  padding: 20px;
+}
+#frente #numero{
+  margin: 10% 0 10px 0;
+  font-size: 20px;
+  text-align:center;
+  letter-spacing: 2px;;
+}
+#frente #nome, #frente #data{
+  display: inline-block;
+  font-size: 14px;
+}
+#frente #data{
+  text-align: right;
+  margin-left:120px;
+}
+#LinhaDois{
+  padding: 20px;
+}
+#LinhaDois form input{
+  height: 50px;
+  width: 96%;
+  border-radius: 5px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+::-webkit-input-placeholder{
+  color:hsl(270, 3%, 87%);
+  padding: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#LinhaDois form p{
+  color:hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.expcvc{
+  display: flex;
+  flex-direction: row;
+  margin:10px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.col3{
+  width: 30% !important;
+}
+#LinhaDois form input[type="submit"]{
+  width: 100%;
+}
+#confirm{
+  margin-top:20px;
+  background-color:hsl(278, 68%, 11%);
+  color:white;
+}

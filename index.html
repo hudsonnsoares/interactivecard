@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Detalhes de Cartão Interativo</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <!-- DESKTOP -->
+  <desktop>
+    <main>
+      <section></section>
+      <section></section>
+    </main>
+  </desktop>
+   <!-- DESKTOP -->
+
+   <!-- MOBILE -->
+  <lmobile>
+    <section id="LinhaUm">
+      <div class="cartoes">
+        <!-- VERSO -->
+        <div id="verso">
+          <dados>
+            <label id="cv">000</label>
+          </dados>
+        </div>
+        <!-- VERSO -->
+
+        <!-- FRENTE -->
+        <div id="frente">
+          <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+          <dados>
+            <p id="numero">0000 0000 0000 0000</p>
+            <label id="nome">Jane Appleseed</label>
+            <label id="data">00/00</label>
+          </dados>
+        </div>
+        <!-- FRENTE -->
+      </div>
+    </section>
+
+    <section id="LinhaDois">
+      <!-- FORMULÁRIO -->
+      <form action="#">
+        <div>
+          <p>Cardholder name</p>
+          <input type="text" required placeholder="e.g. Jane Appleseed">
+        </div>
+        <div>cl
+          <p>Card number</p>
+          <input type="number" required name="" id="" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div>
+          <div class="expcvc">
+            <label>Exp.Date</label>
+            <label>Cvc</label>
+          </div>
+          <input type="number" required class="col3" name="" maxlength="2" id="" placeholder="MM">
+          <input type="number" required class="col3" name="" maxlength="2" id=""  placeholder="YY">
+          <input type="number" required class="col3" name="" maxlength="3" id="" placeholder="e.g. 123">
+        </div>
+        <div>
+          <input type="submit" id="confirm" value="Confirmar">
+        </div>
+      </form>
+      <!-- FORMULÁRIO -->
+    </section>
+  </lmobile>
+  <!-- MOBILE -->
+
+  <!-- Créditos 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hudson Soares</a>.
+  </div>
+  -->
+</body>
+</html>
